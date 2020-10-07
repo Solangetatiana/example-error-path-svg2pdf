@@ -1,0 +1,17 @@
+<button (click)="createPDF()">Download PDF</button>
+
+<div class="area_svg">
+  <img id="img_svg">
+  <svg id="area_svg_print" xmlns="http://www.w3.org/2000/svg"
+     width="400"
+     height="400"
+     viewBox="4.5 1.5 51 49"
+     baseProfile="full" version="1.1" >
+    <g id=desenho_total_print>
+      <line x1="10" y1="7" x2="20" y2="17" style="stroke: green; fill: none; stroke-width: 0.1;" stroke-dasharray="0.5,0.5"></line>
+      <rect x="5" y="5" width="10" height="10" style="stroke: green; fill: none; stroke-width: 0.1;"></rect>
+      <path d="M 10 12 Q 15 7 20 12 " style="stroke: green; fill: none; stroke-width: 0.1;" stroke-dasharray="0.5,0.5"></path>
+      <circle cx="10" cy="10" r="5" style="stroke: blue; fill: none; stroke-width: 0.1;" stroke-dasharray="0.5,0.5" />
+    </g>
+  </svg>
+</div>
