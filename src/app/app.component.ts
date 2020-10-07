@@ -19,7 +19,6 @@ export class AppComponent {
     const desenhoTotal = document.getElementById('desenho_total_print');
 
     const pdf = new jsPDF('portrait', 'cm', [21.0, 29.6]);
-    desenhoTotal.setAttribute('transform', 'scale(1)');
 
     await pdf.svg(areaSvg, { width: 21.0, height: 29.6 });
     const uri = pdf.output('datauristring');
